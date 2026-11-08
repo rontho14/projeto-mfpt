@@ -33,7 +33,7 @@ As matrizes de confusão completas, por janela e por gravação, estão na seç�
 
 Além da avaliação principal, o notebook traz análises de sensibilidade, todas nas mesmas gravações e sem trocar o resultado principal:
 
-- **Limite de alerta e curva ROC.** As notas dos detectores separam bem defeito de normal (AUC média de 0,969 a 1,000). A baixa detecção do Isolation Forest com as medidas do ritmo vem do limite, não do detector: a nota dele para de crescer fora da faixa vista no treino.
+- **Limite de alerta e curva ROC.** As notas dos detectores separam bem defeito de normal (AUC média de 0,969 a 1,000). Com as medidas do ritmo, o Isolation Forest ordena bem as janelas, mas detecta poucas falhas com o limite principal. Reduzir o limite aumenta a detecção e também os falsos alarmes; a análise das pontuações é compatível com saturação fora da faixa de treino.
 - **Voto por gravação.** Pelo voto da maioria das janelas, as medidas do ritmo acertam as 20 gravações e as genéricas 18.
 - **Busca de hiperparâmetros.** A busca em grade dentro da avaliação por gravação não melhorou o diagnóstico (84,6% e 98,7% por janela, contra 91,0% e 99,0%).
 - **Tamanho da janela.** Com 0,1, 0,25 e 0,5 s, o ritmo do defeito fica mais nítido em janelas longas, ao custo de menos janelas normais e mais alarme falso.
