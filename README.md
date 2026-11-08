@@ -19,18 +19,18 @@ Abra o notebook no Colab pelo botão acima e execute todas as células (Ambiente
 
 ## Resultados
 
+Todas as avaliações são feitas por gravação: uma gravação usada para avaliar nunca tem janelas no treino. Na detecção, cada rodada deixa uma gravação normal inteira de fora (3 rodadas) e os valores são médias. No diagnóstico, as gravações são divididas em 3 rodadas, e cada janela é classificada por um modelo que não viu a gravação dela.
+
 | Dataset | Técnica | Tipo de falha identificada | Taxa de detecção (TPR) | Falso positivo (FPR) | Acurácia por classe |
 |---|---|---|---|---|---|
-| MFPT | Distância com PCA, medidas do ritmo do defeito | não se aplica | 0,968 | 0,000 | não se aplica |
-| MFPT | Distância com PCA, medidas genéricas | não se aplica | 1,000 | 0,095 | não se aplica |
-| MFPT | Isolation Forest, medidas genéricas | não se aplica | 0,905 | 0,000 | não se aplica |
-| MFPT | Isolation Forest, medidas do ritmo do defeito | não se aplica | 0,032 | 0,000 | não se aplica |
-| MFPT | Knn (k=3), medidas do ritmo do defeito | normal, pista externa, pista interna | | | normal 1,000 · pista externa 1,000 · pista interna 0,952 |
-| MFPT | Random Forest, medidas genéricas | normal, pista externa, pista interna | | | normal 1,000 · pista externa 1,000 · pista interna 1,000 |
+| MFPT | Isolation Forest (detecção, medidas genéricas) | não se aplica | 0,889 | 0,014 | não se aplica |
+| MFPT | Isolation Forest (detecção, medidas do ritmo do defeito) | não se aplica | 0,107 | 0,000 | não se aplica |
+| MFPT | Distância com PCA (detecção, medidas genéricas) | não se aplica | 1,000 | 0,014 | não se aplica |
+| MFPT | Distância com PCA (detecção, medidas do ritmo do defeito) | não se aplica | 0,990 | 0,028 | não se aplica |
+| MFPT | Regressão logística / Random Forest (diagnóstico, medidas genéricas) | pista externa, pista interna | 0,942 | 0,083 | normal 0,917 · pista externa 0,859 · pista interna 1,000 |
+| MFPT | Knn (k=3) (diagnóstico, medidas do ritmo do defeito) | pista externa, pista interna | 0,996 | 0,028 | normal 0,972 · pista externa 1,000 · pista interna 0,988 |
 
-As matrizes de confusão completas estão na seção 5 do notebook.
-
-No diagnóstico, o teste usa trechos das mesmas gravações vistas no treino. Numa gravação nova, a validação cruzada separada por gravação dá 99,5% de acerto com as medidas do ritmo do defeito e 92% com as medidas genéricas. A discussão está na seção 6 do notebook.
+As matrizes de confusão completas estão na seção 5 do notebook, e a discussão na seção 7.
 
 ## Grupo
 
