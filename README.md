@@ -9,7 +9,7 @@ Usamos gravações reais de vibração de um rolamento em bancada para responder
 | Entrega | Onde está |
 |---|---|
 | Notebook com relatório técnico | [MFPT_deteccao_diagnostico.ipynb](MFPT_deteccao_diagnostico.ipynb) · [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rontho14/projeto-mfpt/blob/main/MFPT_deteccao_diagnostico.ipynb) |
-| Dados | [MFPT Fault Datasets no Kaggle](https://www.kaggle.com/datasets/emperorpein/mfpt-fault-datasets), baixados pelo próprio notebook |
+| Dados | Pasta [data/](data) com as 20 gravações de bancada usadas, copiadas da versão 1 do [MFPT Fault Datasets no Kaggle](https://www.kaggle.com/datasets/emperorpein/mfpt-fault-datasets). O notebook continua baixando os dados direto do Kaggle |
 | Vídeo (até 5 min) | https://youtu.be/MLvu8kA2bAs?is=kys2qq_YTbS4zlnF |
 | Slides | https://docs.google.com/presentation/d/1PiIsfTtS-6RQCTx9j1qUPIPYWofXMPnD1DZZ8YUkstw/edit?usp=sharing |
 
