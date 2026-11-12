@@ -10,8 +10,8 @@ Usamos gravações reais de vibração de um rolamento em bancada para responder
 |---|---|
 | Notebook com relatório técnico | [MFPT_deteccao_diagnostico.ipynb](MFPT_deteccao_diagnostico.ipynb) · [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rontho14/projeto-mfpt/blob/main/MFPT_deteccao_diagnostico.ipynb) |
 | Dados | [MFPT Fault Datasets no Kaggle](https://www.kaggle.com/datasets/emperorpein/mfpt-fault-datasets), baixados pelo próprio notebook |
-| Vídeo (até 5 min) | a fazer |
-| Slides | a fazer |
+| Vídeo (até 5 min) | https://youtu.be/MLvu8kA2bAs?is=kys2qq_YTbS4zlnF |
+| Slides | https://docs.google.com/presentation/d/1PiIsfTtS-6RQCTx9j1qUPIPYWofXMPnD1DZZ8YUkstw/edit?usp=sharing |
 
 ## Como rodar
 
@@ -46,7 +46,12 @@ Além da avaliação principal, o notebook traz análises de sensibilidade, toda
 
 | Nome | RA |
 |---|---|
-| | |
+|André Freire Prino |21.00476-5 |
+|Giuliano Rodrigues Tumoli |21.00036-0 |
+|Guilherme Thomasi Ronca |22.00522-6 |
+|Matheus Santos Feitosa |20.00628-4 |
+|João Vitor Marques Ferrenha |22.00085-2|
+|Rafael Maciel Bertani |21.00634-2 |
 
 ## Uso de inteligência artificial
 
